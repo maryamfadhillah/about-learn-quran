@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,27 +8,167 @@
     <meta name="keyword" content="">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="row">
+    <!-- <header> -->
+    <!-- <div class="navbar dark-blue">
+            <div class="row">
+                <h3>About</h3>
+            </div>
+        </div> -->
+    <!-- </header> -->
+
+    <header class="jumbotron subhead">
+        <div class="container py-3">
             <h3>About</h3>
         </div>
     </header>
 
-    <section>
-        <div class="row">
-            ini section
+    <div class="container">
+        <section class="px-5">
+                <div class="row">
+                    <h3 class="text-center py-3 pb-3">Understanding Quran is now easier!</h3>
+                    <p>Learning to understand Quran is not complicated anymore. Learn Quran Tafsir is a tech solution to
+                        understanding Quran that is advanced, trusted, on a mobile platform, and free to use. Since 2018,
+                        Learn Quran has been registered as a non-profit organization in Indonesia. Check our legality here.
+                        Learn Quran has a valid references, there are :
+                        Tafsir Ibn Kathir whose literature has been proofread & improved by Learn Quran Foundation team
+                        Tafsir Jalalayn from tanzil.net
+                        Quran Translation by Yusuf Ali from tanzil.net
+                        Quran Translation word by word from quranwbw.com
+                    </p>
+                </div>
+                <div class="row text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </section>
+
+        <section class="px-5">
+            <div class="row">
+                <h3 class="text-center py-3 pb-3">Together with Learn Quran reach more <span class="text-blue">people around the world</span></h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="px-5">
+                    <h1 class="text-orange">70jt</h1>
+                    <p>Download</p>
+                </div>
+                <div class="px-5">
+                    <h1 class="text-orange">70jt</h1>
+                    <p>Download</p>
+                </div>
+                <div class="px-5">
+                    <h1 class="text-orange">70jt</h1>
+                    <p>Download</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-5">
+            <div class="row">
+                <h3 class="text-center py-3 pb-3">Development Team</h3>
+            </div>
+        </section>
+
+        <section class="px-5">
+            <div class="row">
+                <h3 class="text-center py-3 pb-3">Support by</h3>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="blue">
+        <div class="container text-white pb-4">
+            <div class="row">
+                <h3 class="text-center py-3 pb-3">Support us to keep Learn Quran free for everyone</h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-light w-50">Donate</a>
+            </div>
         </div>
     </section>
-    
+
+    <div class="container">
+        <section class="px-5">
+            <div class="row">
+                <div class="col-4">
+                <h3>Reach us for any assistances</h3>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-dark w-50">Donate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <footer>
         <div class="row">
             <p>ini footer</hp>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+
 </html>
