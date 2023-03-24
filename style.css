@@ -55,6 +55,10 @@
     /* font-family: ; */
 }
 
+.navbar {
+    background-color: #022739;
+}
+
 header {
     background-color: #022739;
     color: white;
@@ -65,9 +69,9 @@ header {
 
 footer {
     background-color: #022739;
-    color: white;
-    margin: 0px;
-    padding: 6px;
+    color: white;    
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 section {
