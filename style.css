@@ -96,7 +96,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #ffff;
     padding-top: 1pt;
 }
