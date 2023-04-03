@@ -13,12 +13,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.png">
 
-    <style type="text/css">
-        .container-narrow {
-            margin: 0 auto;
-            max-width: 700px;
-        }
-    </style>
     <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -28,8 +22,6 @@
 <body>
     <div class="container-fluid dark-blue">
         <div class="row">
-            <a href="#"><span class="glyphicon glyphicon-menu-hamburger gi-2x sidebarbutton hamburger"
-                    onclick="openNav()"></span></a>
             <div class="text-center py-3">
                 <h3 class="text-title text-white">About</h3>
             </div>
@@ -96,13 +88,13 @@
                     <h3 class="">Meet the Team</h3>
                 </div>
             </div>
-            <div class="row-fluid text-center desc-section">
-                <div id="myCarousel" class="carousel slide" style="margin-top: 10pt;">
+            <div class="row-fluid text-center desc-section" id="fullCarousel">
+                <div id="myFullCarousel" class="carousel slide" style="margin-top: 10pt;">
 
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myFullCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myFullCarousel" data-slide-to="1"></li>
+                        <li data-target="#myFullCarousel" data-slide-to="2"></li>
                     </ol>
 
                     <!-- Carousel items -->
@@ -221,9 +213,30 @@
 
                     </div><!--/carousel-inner-->
 
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-                </div><!--/myCarousel-->
+                    <a class="left carousel-control" href="#myFullCarousel" data-slide="prev">‹</a>
+                    <a class="right carousel-control" href="#myFullCarousel" data-slide="next">›</a>
+                </div><!--/myFullCarousel-->
+            </div>
+
+            <div class="row-fluid text-center desc-section" id="miniCarousel">
+                <div id="myMiniCarousel" class="carousel slide" style="margin-top: 10pt;">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myMiniCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myMiniCarousel" data-slide-to="1"></li>
+                        <li data-target="#myMiniCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Carousel items -->
+                    <div class="carousel-inner" id="tes-team">
+
+                    </div><!--/carousel-inner-->
+
+                    <a class="left carousel-control" href="#myMiniCarousel" data-slide="prev"
+                        style="margin-left: 10%;">‹</a>
+                    <a class="right carousel-control" href="#myMiniCarousel" data-slide="next"
+                        style="margin-right: 10%;">›</a>
+                </div><!--/myMiniCarousel-->
             </div>
         </div>
 
@@ -250,6 +263,12 @@
             </div><!-- /.row -->
         </div>
     </div> <!-- /container -->
+
+    <div class="container-narrow section">
+        <div class="row-fluid text-center head-section">
+            <div id="tes-team"></div>
+        </div>
+    </div>
 
     <div class="blue">
         <div class="container-narrow">
@@ -354,10 +373,75 @@
 
     <script>
         $(document).ready(function () {
-            $('#myCarousel').carousel({
+            $('#myFullCarousel').carousel({
                 interval: 10000
             })
         });
+
+        $(document).ready(function () {
+            $('#myMiniCarousel').carousel({
+                interval: 10000
+            })
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+        const team = [
+            {name : 'Sani', title : 'Founder & Advisor'},
+            {name : 'Denny', title : 'Chairman'},
+            {name : 'Angga', title : 'Vice Chairman', pict : 'Angga2'},
+            {name : 'Nilam', title : 'Product Manager'},
+            {name : 'Himma', title : 'Quality Assurance'},
+            {name : 'irfan', title : 'AI/NLP Engineer'},
+            {name : 'Angga', title : 'Mobile Developer'},
+            {name : 'Asma', title : 'Fundraiser'},
+            {name : 'Aji', title : 'Technology Advisor'},
+            {name : 'Salamah', title : 'Business Analyst'},
+            {name : 'Mardadi', title : 'Full-Stack Web Developer', pict : 'Farhan'},
+            {name : 'Defani', title : 'Graphic Designer'},
+            {name : 'Nur', title : 'Associate Product Manager'},
+            {name : 'Jihan', title : 'Associate Product Manager'},
+            {name : 'Diani', title : 'Fundraising Manager'},
+            {name : 'Danu', title : 'Business Analyst Intern'},
+            {name : 'Azhim', title : 'Fundraiser'},
+            {name : 'Ayyash', title : 'Videographer Intern'},
+            {name : 'Risman', title : 'Videographer Intern'},
+            {name : 'Majid', title : 'Software Engineer'},
+            {name : 'Luthfi', title : 'Software Engineer'},
+            {name : 'Afkar', title : 'Software Engineer'},
+            {name : 'Arief', title : 'Quality Assurance'},
+            {name : 'Mila', title : 'Quality Assurance'},
+        ]
+
+        let text = '';
+        for (let i = 0; i < team.length; i++) {
+            let status = '';
+            if (i == 0) {
+                status = 'active';
+            } 
+
+            if (team[i].pict == undefined) {
+                team[i].pict = team[i].name;
+            }
+
+            text += `<div class="item ${status}">
+                            <div class="row-fluid team-link">
+                                <div class="span12">
+                                    <a href="#x" class="team-section">
+                                        <img class="img-circle" src="assets/img/team/${team[i].pict}-new.png"
+                                            style="height: 150px;">
+                                        <h3 style="margin-bottom: 2pt;">${team[i].name}</h3>
+                                    </a>
+                                    <p>${team[i].title}</p>
+                                </div>
+                            </div>
+                        </div>`;
+
+        }
+
+        document.getElementById('tes-team').innerHTML = text;
     </script>
 
 </body>
