@@ -389,48 +389,40 @@
     <script type="text/javascript">
 
         const team = [
-            {name : 'Sani', title : 'Founder & Advisor'},
-            {name : 'Denny', title : 'Chairman'},
-            {name : 'Angga', title : 'Vice Chairman', pict : 'Angga2'},
-            {name : 'Nilam', title : 'Product Manager'},
-            {name : 'Himma', title : 'Quality Assurance'},
-            {name : 'irfan', title : 'AI/NLP Engineer'},
-            {name : 'Angga', title : 'Mobile Developer'},
-            {name : 'Asma', title : 'Fundraiser'},
-            {name : 'Aji', title : 'Technology Advisor'},
-            {name : 'Salamah', title : 'Business Analyst'},
-            {name : 'Mardadi', title : 'Full-Stack Web Developer', pict : 'Farhan'},
-            {name : 'Defani', title : 'Graphic Designer'},
+            {name : 'Sani', title : 'Founder & Advisor', username : 'mohamadsani'},
+            {name : 'Denny', title : 'Chairman', username : 'dennyyus'},
+            {name : 'Angga', title : 'Vice Chairman', username : 'dennyyus', pict : 'Angga2'},
+            {name : 'Nilam', title : 'Product Manager', username : 'nilamsari-putri-utami-2b8416b9'},
+            {name : 'Himma', title : 'Quality Assurance', username : 'himmaliyah'},
+            {name : 'Angga', title : 'Mobile Developer', username : 'muhammad-angga-muttaqien-64906912b'},
+            {name : 'irfan', title : 'AI/NLP Engineer', username : 'irfan-assidiq-48729611a'},
+            {name : 'Asma', title : 'Fundraiser', username : 'asma-nabila-a43a4398'},
+            {name : 'Aji', title : 'Technology Advisor', username : 'irfan-assidiq-48729611a'},
+            {name : 'Fajri', title : 'Content Advisor', username : ''},
+            {name : 'Salamah', title : 'Business Analyst', username : ''},
+            {name : 'Mardadi', title : 'Full-Stack Web Developer', username : '', pict : 'Farhan'},
+            {name : 'Defani', title : 'Graphic Designer', username : ''},
             {name : 'Nur', title : 'Associate Product Manager'},
             {name : 'Jihan', title : 'Associate Product Manager'},
-            {name : 'Diani', title : 'Fundraising Manager'},
+            {name : 'Diani', title : 'Fundraising Manager', username : ''},
             {name : 'Danu', title : 'Business Analyst Intern'},
-            {name : 'Azhim', title : 'Fundraiser'},
-            {name : 'Ayyash', title : 'Videographer Intern'},
+            {name : 'Azhim', title : 'Fundraiser', username : ''},
+            {name : 'Ayyash', title : 'Videographer Intern', username : ''},
             {name : 'Risman', title : 'Videographer Intern'},
-            {name : 'Majid', title : 'Software Engineer'},
-            {name : 'Luthfi', title : 'Software Engineer'},
-            {name : 'Afkar', title : 'Software Engineer'},
-            {name : 'Arief', title : 'Quality Assurance'},
-            {name : 'Mila', title : 'Quality Assurance'},
+            {name : 'Majid', title : 'Software Engineer', username : ''},
+            {name : 'Luthfi', title : 'Software Engineer', username : 'luthfi-ar'},
+            {name : 'Afkar', title : 'Software Engineer', username : 'muhammad-afkar-26b450150'},
+            {name : 'Arief', title : 'Quality Assurance', username : 'azarief7'},
+            {name : 'Mila', title : 'Quality Assurance', username : 'milashania'},
         ]
 
         let text = '';
         for (let i = 0; i < team.length; i++) {
-            let status = '';
-            if (i == 0) {
-                status = 'active';
-            } 
-
-            if (team[i].pict == undefined) {
-                team[i].pict = team[i].name;
-            }
-
-            text += `<div class="item ${status}">
+            text += `<div class="item `+((i == 0) ? 'active' : '')+`">
                             <div class="row-fluid team-link">
                                 <div class="span12">
-                                    <a href="#x" class="team-section">
-                                        <img class="img-circle" src="assets/img/team/${team[i].pict}-new.png"
+                                    <a href="`+(!team[i].username ? '#' : 'https://www.linkedin.com/in/' + team[i].username)+`" class="team-section" target="_blank">
+                                        <img class="img-circle" src="assets/img/team/`+((!team[i].pict) ? team[i].name : team[i].pict)+`-new.png"
                                             style="height: 150px;">
                                         <h3 style="margin-bottom: 2pt;">${team[i].name}</h3>
                                     </a>
@@ -438,7 +430,6 @@
                                 </div>
                             </div>
                         </div>`;
-
         }
 
         document.getElementById('tes-team').innerHTML = text;
