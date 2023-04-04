@@ -1,6 +1,104 @@
+/* General setting */
+
+.heading {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #022739;
+}
+
+@media only screen and (max-width: 768px) {
+    .head-section {
+        margin-block: 50pt; 
+        margin-bottom: 5pt;
+    }
+    
+    .desc-section {
+        margin-bottom: 50pt;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .head-section {
+        margin-block: 100pt; 
+        margin-bottom: 5pt;
+    }
+    
+    .desc-section {
+        margin-bottom: 100pt;
+    }
+}
+
+hr.top-header-big {
+    border-top: 3px solid #FF7000;
+    width: 80px;
+    margin: auto;
+}
+
+hr.top-header {
+    border-top: 3px solid #FF7000;
+    width: 50px;
+    margin: auto;
+}
+
+footer.about {
+    background-color: #022739;
+    color: white;    
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.content-footer {
+    padding-bottom: 10pt;
+}
+
+body.about {
+    padding: 0px !important;
+}
+
+h3.about {
+    padding-inline: 20pt;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1.about {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin-left: 0;
+	padding-left: 0;
+}
+
+span.about {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
 .container-narrow {
     margin: 0 auto;
     max-width: 700px;
+}
+
+@media only screen and (max-width: 768px) {   
+    .param-text {
+        padding-top: 40px; 
+        padding-bottom: 45px;
+        font-size:70px; 
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    .param-text {
+        padding-top: 30px; 
+        padding-bottom: 35px;
+        font-size:70px; 
+        font-family: 'Ubuntu', sans-serif;
+    }
 }
 
 /* background colors */
@@ -29,7 +127,7 @@
     color: #80581A;
 }
 
-/* colors */
+/* colors for text */
 
 .text-white {
     color: #fff;
@@ -55,73 +153,7 @@
     color: #80581A;
 }
 
-.heading {
-    text-align: center;
-    /* font-family: ; */
-}
-
-.navbar {
-    background-color: #022739;
-}
-
-.head-section {
-    margin-block: 50pt; 
-    margin-bottom: 5pt;
-}
-
-.desc-section {
-    margin-bottom: 50pt;
-}
-
-header {
-    background-color: #022739;
-    color: white;
-    /* margin: 0;
-    padding: 3px; */
-    text-align: center;
-}
-
-footer {
-    background-color: #022739;
-    color: white;    
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.content-footer {
-    padding-bottom: 10pt;
-}
-
-section {
-    padding: 10px;
-}
-
-body {
-    padding: 0px !important;
-}
-
-a {
-    text-decoration: none !important;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-h3 {
-    padding-inline: 20pt;
-}
-
-.list-unstyled {
-    list-style: none;
-    margin-left: 0;
-	padding-left: 0;
-}
-
-span {
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
+/* Carousel classes */
 
 /* Removes the default 20px margin and creates some padding space for the indicators and controls */
 .carousel {
@@ -165,6 +197,16 @@ background: #333333;
     #miniCarousel {
         display: none;
     }
+}
+
+/* Links set up */
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .team-link a {
