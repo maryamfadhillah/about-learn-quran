@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <!-- Le styles -->
     <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.png">
@@ -21,7 +19,7 @@
 
 </head>
 
-<body class="about">
+<body class="about" onload="load()">
     <div class="container-fluid dark-blue">
         <div class="row-fluid">
             <div class="text-center py-3">
@@ -33,16 +31,16 @@
     <div class="container">
 
         <div class="container-narrow">
-            <div class="" style="margin: 30pt; margin-top: 45pt; margin-block-end: 45pt;">
+            <div class="" style="margin: 20pt; margin-top: 30pt; margin-block-end: 45pt;">
                 <div class="text-center desc-section">
                     <hr class="top-header-big">
-                    <h1 class="about">Understanding Quran is now easier!</h1>
-                    <p style="margin-top: 15pt;">Learning to understand Quran is not complicated anymore. Learn Quran
+                    <h1 class="about" style="margin-block: 20px;">Understanding Quran is now easier!</h1>
+                    <p style="margin-top: 15pt; word-spacing: 2px;">Learning to understand Quran is not complicated
+                        anymore. Learn Quran
                         Tafsir is a tech solution to
                         understanding Quran that is advanced, trusted, on a mobile platform, and free to use. Since
                         2018,
-                        Learn Quran has been registered as a non-profit organization in Indonesia. Check our legality
-                        here.
+                        Learn Quran has been registered as a non-profit organization in Indonesia.
                         Learn Quran has a valid references, there are :
                         Tafsir Ibn Kathir whose literature has been proofread & improved by Learn Quran Foundation team,
                         Tafsir Jalalayn from <a class="text-orange" href="https://tanzil.net/">tanzil.net</a>,
@@ -51,13 +49,11 @@
                         Quran Translation word by word from <a class="text-orange"
                             href="https://quranwbw.com/">quranwbw.com</a>
                     </p>
-                    <div class="embed-responsive embed-responsive-16by9" style="margin-top: 20pt;">
-                        <div class="embed-responsive embed-responsive-16by9 player" data-plyr-provider="youtube">
-                            <iframe class="embed-responsive-item" width="auto" height="auto"
-                                src="https://www.youtube.com/embed/Zgwwx85sVkY"
-                                title="Ayo Bantu Dunia untuk Memahami Quran" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                    <a class="btn btn-large btn-success" href="https://ahu.go.id/sabh/yayasan/qrcode/?kode=NTAxODAxMTEzMjEwMDI4N18xXzE2IEphbnVhcmkgMjAxOF8xNiBKYW51YXJpIDIwMTg=" target="_blank" style="margin-block: 6px;">Check our legality here</a>
+                    <div style="margin-inline: 30px; margin-top: 17px;">
+                        <div class="container-iframe">
+                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Zgwwx85sVkY"
+                                title="Ayo Bantu Dunia untuk Memahami Quran"></iframe>
                         </div>
                     </div>
                 </div>
@@ -70,24 +66,25 @@
                 <h3 class="about">Together with Learn Quran reach more <span class="text-blue">people around
                         the world</span></h3>
             </div>
+            <h4 class="about text-center">Accessed by</h4>
             <div class="row-fluid text-center desc-section">
                 <div class="span4">
                     <div class="param-text">
-                        <span class="text-orange about">70jt</span>
+                        <span class="text-orange about"><span id="users">0</span>jt+</span>
                     </div>
-                    <p>Download</p>
+                    <p>Users</p>
                 </div>
                 <div class="span4">
                     <div class="param-text">
-                        <span class="text-orange about">70jt</span>
+                        <span class="text-orange about"><span id="countries">0</span>+</span>
                     </div>
-                    <p>Download</p>
+                    <p>Countries</p>
                 </div>
                 <div class="span4">
                     <div class="param-text">
-                        <span class="text-orange about">70jt</span>
+                        <span class="text-orange about" id="languages">0</span>
                     </div>
-                    <p>Download</p>
+                    <p>Languages</p>
                 </div>
             </div>
         </div>
@@ -117,7 +114,7 @@
                                     <a href="#x" class="team-section about">
                                         <img class="img-circle" src="assets/img/team/Sani-new.png"
                                             style="height: 150px;">
-                                        <h3 style="margin-bottom: 2pt;">Sani</h3>
+                                        <h3 class="about" style="margin-bottom: 2pt;">Sani</h3>
                                     </a>
                                     <p>Founder & Advisor</p>
                                 </div>
@@ -239,7 +236,7 @@
                     </ol>
 
                     <!-- Carousel items -->
-                    <div class="carousel-inner" id="tes-team">
+                    <div class="carousel-inner" id="carouselTeam">
 
                     </div><!--/carousel-inner-->
 
@@ -303,7 +300,8 @@
                     <div class="content-footer">
                         <img src="assets/LQ-Tafsir2-white 1.png" style="height: 50pt; margin-bottom: 3pt;">
                         <p class="pt-3">It's free, download here!</p>
-                        <a class="about" href="https://play.google.com/store/apps/details?id=com.bi.quran&referrer=utm_source%3Dweb%2520learn%2520quran.co%26utm_medium%3Dbanner%26utm_campaign%3DDownload%2520apps%2520LQ"
+                        <a class="about"
+                            href="https://play.google.com/store/apps/details?id=com.bi.quran&referrer=utm_source%3Dweb%2520learn%2520quran.co%26utm_medium%3Dbanner%26utm_campaign%3DDownload%2520apps%2520LQ"
                             target="_blank">
                             <img src="assets/google-play-badge.png" style="height: 35pt;">
                         </a>
@@ -313,11 +311,14 @@
                     <div class="content-footer">
                         <span class="about"><strong>About Us</strong></span>
                         <ul class="list-unstyled">
-                            <li><a class="about" href="https://tajwid.learn-quran.co/about-what-is-learn-quran-tajwid/?utm_source=WebUtamaLQ&utm_medium=Footer&utm_campaign=AboutUsLQTajwid"
+                            <li><a class="about"
+                                    href="https://tajwid.learn-quran.co/about-what-is-learn-quran-tajwid/?utm_source=WebUtamaLQ&utm_medium=Footer&utm_campaign=AboutUsLQTajwid"
                                     target="_blank">About TQTajwid</a></li>
-                            <li><a class="about" href="https://tafsir.learn-quran.co/id/about?utm_source=WebUtamaLQ&utm_medium=Footer&utm_campaign=AboutUsLQTafsir"
+                            <li><a class="about"
+                                    href="https://tafsir.learn-quran.co/id/about?utm_source=WebUtamaLQ&utm_medium=Footer&utm_campaign=AboutUsLQTafsir"
                                     target="_blank">About TQTafsir</a></li>
-                            <li><a class="about" href="https://www.amalsholeh.com/TafsirDigital?utm_medium=Campaign&utm_source=AmalSholeh&utm_campaign=LQTafsir"
+                            <li><a class="about"
+                                    href="https://www.amalsholeh.com/TafsirDigital?utm_medium=Campaign&utm_source=AmalSholeh&utm_campaign=LQTafsir"
                                     target="_blank">Jariyah Opportunity</a></li>
                             <li><a class="about" href="https://learn-quran.co/post/" target="_blank">Post</a></li>
                         </ul>
@@ -327,12 +328,16 @@
                     <div class="content-footer">
                         <span class="about"><strong>Our Products</strong></span>
                         <ul class="list-unstyled">
-                            <li><a class="about" href="https://play.google.com/store/apps/details?id=com.bi.learnquran&utm_source=LearnQuran&utm_medium=Website&utm_campaign=PlayStore&pli=1"
+                            <li><a class="about"
+                                    href="https://play.google.com/store/apps/details?id=com.bi.learnquran&utm_source=LearnQuran&utm_medium=Website&utm_campaign=PlayStore&pli=1"
                                     target="_blank">TQTajwid Android</a></li>
-                            <li><a class="about" href="https://apps.apple.com/us/app/learn-quran-tajwid/id960134803?utm_source=LearnQuran&utm_medium=Website&utm_campaign=AppStore"
+                            <li><a class="about"
+                                    href="https://apps.apple.com/us/app/learn-quran-tajwid/id960134803?utm_source=LearnQuran&utm_medium=Website&utm_campaign=AppStore"
                                     target="_blank">TQTajwid iOS</a></li>
-                            <li><a class="about" href="https://tafsir.learn-quran.co/id" target="_blank">TQTafsir Web</a></li>
-                            <li><a class="about" href="https://play.google.com/store/apps/details?id=com.bi.quran&referrer=utm_source%3Dweb%2520learn%2520quran.co%26utm_medium%3Dbanner%26utm_campaign%3DDownload%2520apps%2520LQ"
+                            <li><a class="about" href="https://tafsir.learn-quran.co/id" target="_blank">TQTafsir
+                                    Web</a></li>
+                            <li><a class="about"
+                                    href="https://play.google.com/store/apps/details?id=com.bi.quran&referrer=utm_source%3Dweb%2520learn%2520quran.co%26utm_medium%3Dbanner%26utm_campaign%3DDownload%2520apps%2520LQ"
                                     target="_blank">TQTafsir Android</a></li>
                         </ul>
                     </div>
@@ -404,7 +409,7 @@
             { name: 'Angga', title: 'Mobile Developer', username: 'muhammad-angga-muttaqien-64906912b' },
             { name: 'irfan', title: 'AI/NLP Engineer', username: 'irfan-assidiq-48729611a' },
             { name: 'Asma', title: 'Fundraiser', username: 'asma-nabila-a43a4398' },
-            { name: 'Aji', title: 'Technology Advisor', username: 'irfan-assidiq-48729611a' },
+            { name: 'Aji', title: 'Technology Advisor', username: '' },
             { name: 'Fajri', title: 'Content Advisor', username: '' },
             { name: 'Salamah', title: 'Business Analyst', username: '' },
             { name: 'Mardadi', title: 'Full-Stack Web Developer', username: '', pict: 'Farhan' },
@@ -428,10 +433,10 @@
             text += `<div class="item ` + ((i == 0) ? 'active' : '') + `">
                             <div class="row-fluid team-link">
                                 <div class="span12">
-                                    <a href="`+ (!team[i].username ? '#' : 'https://www.linkedin.com/in/' + team[i].username) + `" class="team-section" target="_blank">
+                                    <a href="`+ (!team[i].username ? '#' : 'https://www.linkedin.com/in/' + team[i].username) + `" class="team-section about" target="_blank">
                                         <img class="img-circle" src="assets/img/team/`+ (!team[i].pict ? team[i].name : team[i].pict) + `-new.png"
                                             style="height: 150px;">
-                                        <h3 style="margin-bottom: 2pt;">${team[i].name}</h3>
+                                        <h3 class="about" style="margin-bottom: 2pt;">${team[i].name}</h3>
                                     </a>
                                     <p>${team[i].title}</p>
                                 </div>
@@ -439,7 +444,47 @@
                         </div>`;
         }
 
-        document.getElementById('tes-team').innerHTML = text;
+        document.getElementById('carouselTeam').innerHTML = text;
+
+        //Animation Counting
+        function animate(obj, initVal, lastVal, duration) {
+            let startTime = null;
+
+            //get the current timestamp and assign it to the currentTime variable
+            let currentTime = Date.now();
+
+            //pass the current timestamp to the step function
+            const step = (currentTime) => {
+
+                //if the start time is null, assign the current time to startTime
+                if (!startTime) {
+                    startTime = currentTime;
+                }
+
+                //calculate the value to be used in calculating the number to be displayed
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+
+                //calculate what to be displayed using the value gotten above
+                obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+                //checking to make sure the counter does not exceed the last value (lastVal)
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    window.cancelAnimationFrame(window.requestAnimationFrame(step));
+                }
+            };
+            //start animating
+            window.requestAnimationFrame(step);
+        }
+        let text1 = document.getElementById('users');
+        let text2 = document.getElementById('countries');
+        let text3 = document.getElementById('languages');
+        const load = () => {
+            animate(text1, 10, 1, 700);
+            animate(text2, 0, 60, 1500);
+            animate(text3, 0, 2, 500);
+        }
     </script>
 
 </body>
