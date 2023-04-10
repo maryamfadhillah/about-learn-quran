@@ -17,6 +17,16 @@
     .desc-section {
         margin-bottom: 50pt;
     }
+
+    .margin-video {
+        margin-top: 10pt;
+    }
+}
+
+@media only screen and (min-width: 769px; min-height: 600px) {
+    .hero-about {
+        margin-top: 100pt;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -28,12 +38,19 @@
     .desc-section {
         margin-bottom: 100pt;
     }
+
+    .add-margin-top {
+        margin-top: 70pt;
+    }
+
+    .margin-video {
+        margin-top: 40pt;
+    }
 }
 
 hr.top-header-big {
-    border-top: 3px solid #FF7000;
+    border-top: 3px solid #fff;
     width: 80px;
-    margin: auto;
 }
 
 hr.top-header {
@@ -69,6 +86,10 @@ h1.about {
 h4.about {
     font-family: 'Ubuntu', sans-serif;
     color: #606060;
+}
+
+p.about {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .list-unstyled {
@@ -118,6 +139,10 @@ span.about {
 
 .blue {
     background-color: #056387;
+}
+
+.light-blue {
+    background-color: #0562872b;
 }
 
 .grey {
