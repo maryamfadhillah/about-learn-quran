@@ -1,4 +1,4 @@
-# Redesign About Page of Learn Quran Tafsir Website
+# Redesign `About Page` of Learn Quran Tafsir Website
 Learn Quran Tafsir provide solution to understanding Quran that is advanced, trusted, on a mobile platform, and free to use.
 
 <h3>🛠️Tools</h3>
