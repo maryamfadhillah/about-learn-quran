@@ -14,3 +14,14 @@ Learn Quran Tafsir provide solution to understanding Quran that is advanced, tr
 - Hierarchical website structure <br>
 
 # Before
+![](/assets/old-web.jpeg)
+
+# After
+<h3>Design 1</h3>
+![](/assets/new-page-template1.jpeg)
+
+<h3>Design 2</h3>
+![](/assets/new-page-template2.jpeg)
+
+<h3>Design 3</h3>
+![](/assets/new-page-template3.jpeg)
