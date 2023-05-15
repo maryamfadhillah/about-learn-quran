@@ -1,0 +1,23 @@
+        const team = [
+            { name: 'Sani', title: 'Founder & Advisor', username: 'mohamadsani' },
+            { name: 'Denny', title: 'Chairman',},
+            { name: 'Mila', title: 'Quality Assurance', username: 'milashania' },
+        ]
+
+        let text = '';
+        for (let i = 0; i < team.length; i++) {
+            text += `<div class="item ` + ((i == 0) ? 'active' : '') + `">
+                            <div class="row-fluid team-link">
+                                <div class="span12">
+                                    <a href="`+ (!team[i].username ? '#' : 'https://www.linkedin.com/in/' + team[i].username) + `" class="team-section about" target="_blank">
+                                        <img class="img-circle" src="assets/img/team/`+ (!team[i].pict ? team[i].name : team[i].pict) + `-new.png"
+                                            style="height: 150px;">
+                                        <h3 class="about" style="margin-bottom: 2pt;">${team[i].name}</h3>
+                                    </a>
+                                    <p>${team[i].title}</p>
+                                </div>
+                            </div>
+                        </div>`;
+        }
+
+        document.getElementById('carouselTeam').innerHTML = text;
